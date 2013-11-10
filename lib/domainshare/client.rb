@@ -2,7 +2,6 @@ module Domainshare
     class Client
         @@WARN = false
         def initialize(email, password)
-            @url = "https://api.domainshare.tk"
             if (email.empty? or password.empty?) and @@WARN
                 puts "Either email or password is empty. Most of the functions will not work, unless those are added to each funtion calls"
             end
