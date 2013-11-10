@@ -1,6 +1,8 @@
 # Domainshare
 
-Gem for .tk DomainShare API. Basically the (pretty messy) sample code.
+Gem for .tk DomainShare API. Basically the (pretty messy) domainshare lib code.
+Help me refactoring if you like ;-)
+
 You can find the original code at http://www.nic.tk/en/domainsharelibs.html
 
 ## Installation
@@ -21,18 +23,18 @@ Or install it yourself as:
 
 Test connection
 
-``
+```
 conn = DSCLIENT::API.new(username, password)
 puts conn.ping()
-``
+```
 
 Register a domain:
 
-``
+```
 puts conn.register({"domainname" => "sld",
                     "enduseremail" => "user-email@example.com", 
                      "nameserver" => ["ns1.example.com", "ns2.example.com"] })
-``
+```
 
 ## Contributing
 
